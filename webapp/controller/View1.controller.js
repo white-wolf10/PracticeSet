@@ -45,6 +45,7 @@ sap.ui.define([
 			});
 			//Step 5: Inject the filter
 			oBinding.filter([oFilterMain]);
+			alert("operations performed");
 			
 			
 		},
