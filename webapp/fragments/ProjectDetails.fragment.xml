@@ -1,0 +1,73 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+		<Table id="idTablePD" items="{employee>/employee}" alternateRowColors="true">
+	
+		<items>
+			<!-- Relative Binding -->
+			<ColumnListItem>
+				<cells>
+					<Text text="{employee>firstName}"/>
+					<Input value="{employee>region}" showValueHelp="true" valueHelpRequest="onF4"/>
+					<!--<Text text="{employee>region}"/>-->
+					<Text text="{employee>jobType}"/>
+					<Text text="{employee>phoneNumber}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	
+		<!-- text and buttons above table-->
+		<headerToolbar>
+			<Toolbar>
+				<Label id="tableHeadText" text="PROSPECTS" design="Bold"/>
+				<ToolbarSpacer/>
+				<Button text="Hide" press="onHide"/>
+				<Button icon="sap-icon://filter" press="onFilter"/>
+			</Toolbar>
+		</headerToolbar>
+		
+		<!-- Column text -->
+		<columns>
+			<Column>
+				<header>
+					<Label text="Employee Name" tooltip="name of employee"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Region" tooltip="name of region"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Job Type"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Phone Number"/>
+				</header>
+			</Column>
+		</columns>
+	</Table>
+	
+		<Toolbar>
+			<Label id="contactText" text="Contact"></Label>
+		</Toolbar>
+		<List>
+			<items>
+				<DisplayListItem	
+				label="Catalog Website"
+				value="https://www.lntinfotech.com/"
+				type="Active"
+				press="handleUrlPressList">
+				</DisplayListItem>
+				
+				<DisplayListItem
+				label="Call"
+				value="+919451223443"
+				type="Active"
+				press="handleTelPress" >
+				</DisplayListItem>
+			</items>
+		</List>
+	
+</core:FragmentDefinition>

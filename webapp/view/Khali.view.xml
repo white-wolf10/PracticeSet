@@ -1,0 +1,48 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:objpg="sap.uxap" xmlns:f="sap.ui.layout.form" xmlns:unf="sap.ui.unified" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="cap.fin.ar.controller.Khali">
+	<!-- unified library used for file uploader-->
+	
+		<Page title="Dashboard">
+			<content>
+				<!-- All tiles fragment -->
+				<core:Fragment fragmentName="cap.fin.ar.fragments.Tiles" type="XML"></core:Fragment>
+						
+				<Panel expandable="true" headerText="Projects" width="auto" class="sapUiResponsiveMargin">
+					<content>
+						<core:Fragment id="projectDetailTableId" fragmentName="cap.fin.ar.fragments.ProjectDetails" type="XML"/>
+					</content>
+				</Panel>
+				
+				<Panel expandable="true" width="auto" class="sapUiResponsiveMargin">
+					<headerToolbar>
+						<OverflowToolbar style="Clear">
+							<Title text="Project Proposals"/>
+							<ToolbarSpacer/>
+							<Button icon="sap-icon://settings"/>
+							<Button icon="sap-icon://drop-down-list"/>
+						</OverflowToolbar>
+					</headerToolbar>
+					<!-- Table fragment-->
+					<core:Fragment fragmentName="cap.fin.ar.fragments.SuppTable" type="XML"></core:Fragment>
+					<Toolbar height="80px">
+						<Label id="contactText" text="CONTACT" width="1600px" design="Bold"/>
+					</Toolbar>
+					<List>
+						<items>
+							<DisplayListItem label="Catalog Website" value="https://www.lntinfotech.com/" type="Active" press="handleUrlPressList"></DisplayListItem>
+							<DisplayListItem label="Call" value="+919451223443" type="Active" press="handleTelPress"></DisplayListItem>
+						</items>
+					</List>
+				</Panel>				
+
+				<Panel headerText="Project Uploader" expandable="true" width="auto" class="sapUiResponsiveMargin">
+					<unf:FileUploader id="imageUploader"/>
+					<Button text="Trigger Upload SAP" press="onUpload" icon="sap-icon://add-document"/>
+				</Panel>
+			
+				<Panel  headerText="Project Uploader" expandable="true" width="auto" class="sapUiResponsiveMargin">
+					<Button></Button>
+				</Panel>
+			</content>
+		</Page>
+		
+</mvc:View>

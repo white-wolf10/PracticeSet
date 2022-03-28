@@ -1,0 +1,60 @@
+{
+	"employee": [{
+			"jobTitle": "Developer",
+			"firstName": "Romin",
+			"lastName": "Irani",
+			"region": "CA",
+			"jobType": "Part time",
+			"phoneNumber": "+916758478389",
+			"emailAddress": "romin.k.irani@gmail.com",
+			"rating":5
+		},
+		{
+			"jobTitle": "SalesPerson",
+			"firstName": "Maroni",
+			"lastName": "Macaroni",
+			"region": "AS",
+			"jobType": "Part time",
+			"phoneNumber": "+40098798009",
+			"emailAddress": "romin.k.irani@gmail.com",
+			"rating":3
+		},
+		{
+			"jobTitle": "Admin",
+			"firstName": "Neil",
+			"lastName": "Ezemiel",
+			"region": "SD",
+			"jobType": "Full time",
+			"phoneNumber": "+6718297948",
+			"emailAddress": "romin.k.irani@gmail.com",
+			"rating":5
+		},
+		{
+			"jobTitle": "Developer",
+			"firstName": "Ritesh",
+			"lastName": "fakebook",
+			"region": "MS",
+			"jobType": "Full time",
+			"phoneNumber": "+9145454548",
+			"emailAddress": "romin.k.irani@gmail.com",
+			"rating":4	
+		},
+		{
+			"jobTitle": "Engineer",
+			"firstName": "Suliman",
+			"lastName": "Nokojovish",
+			"region": "DR",
+			"jobType": "Full time",
+			"phoneNumber": "+916758478389",
+			"emailAddress": "romin.k.irani@gmail.com",
+			"rating":3
+		}
+	],
+	"employeeCat":[{
+		"category":"Employee Name"
+	},{
+		"category":"Region"
+	},{
+		"category":"lastName"
+	}]
+}

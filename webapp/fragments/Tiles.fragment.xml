@@ -1,0 +1,42 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	
+	<TileContent footer="November 12, 2021" class="sapUiSmallMargin">
+		<NewsContent contentText="234 apples purchased making it at the top for this week" subheader="App News"/>
+	</TileContent>
+	
+	<TileContent footer="Current Quarter" unit="EUR" class="sapUiSmallMargin">
+		<NumericContent scale="pcs" value="230" valueColor="Error" indicator="Up"/>
+	</TileContent>
+	
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Shreyansh Sinha DevOps" subheader="Auto Department" press="press" frameType="TwoByHalf">
+		<TileContent>
+			<ImageContent src="images/car.jpg"/>
+		</TileContent>
+	</GenericTile>
+	
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Sales Fulfillment Application App" subheader="Overview" press="press">
+		<TileContent unit="EUR" footer="Current Quarter">
+			<ImageContent src="sap-icon://home-share"/>
+		</TileContent>
+	</GenericTile>
+	
+	<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" transitionTime="250" displayTime="2500">
+		<GenericTile backgroundImage="images/aircraft.jpg" frameType="TwoByOne" press="onPress">
+			<TileContent footer="November 12, 2021">
+				<NewsContent contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe" subheader="Today, SAP News"/>
+			</TileContent>
+		</GenericTile>
+		<GenericTile backgroundImage="images/innovation.jpg" frameType="TwoByOne">
+			<TileContent footer="November 12, 2021">
+				<NewsContent contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com" subheader="Today, SAP News"/>
+			</TileContent>
+		</GenericTile>
+	</SlideTile>
+	
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop" backgroundImage="images/img.jpg" frameType="OneByOne" press="handleUrlPress">
+		<TileContent footer="Report Available" frameType="OneByOne">
+			<NewsContent contentText="Cover Page Analytics" subheader="SAP Analytics Cloud"/>
+		</TileContent>
+	</GenericTile>
+	
+</core:FragmentDefinition>

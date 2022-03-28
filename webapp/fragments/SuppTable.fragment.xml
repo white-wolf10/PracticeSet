@@ -1,0 +1,53 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!--<core:Fragment id="projectProposalTableId" fragmentName="cap.fin.ar.fragments.ProjectDetails" type="XML"></core:Fragment>-->
+	<!-- sap.m.Table is a list control. It is a multipe column list -->
+	<Table id="idTablePD" items="{employee>/employee}" alternateRowColors="true">
+	
+		<items>
+			<!-- Relative Binding -->
+			<ColumnListItem>
+				<cells>
+					<Text id="firstNameText" text="{employee>firstName}"/>
+					<Input id="inputRegionId" value="{employee>region}" showValueHelp="true" valueHelpRequest="onF4"/>
+					<!--<Text text="{employee>region}"/>-->
+					<Text text="{employee>jobType}"/>
+					<Text text="{employee>phoneNumber}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	
+		<!-- text and buttons above table-->
+		<headerToolbar>
+			<Toolbar>
+				<Label id="tableHeadText" text="PROSPECTS" design="Bold"/>
+				<ToolbarSpacer/>
+				<Button text="Hide" press="onHide"/>
+				<Button icon="sap-icon://filter" press="onFilter"/>
+			</Toolbar>
+		</headerToolbar>
+		
+		<!-- Column text -->
+		<columns>
+			<Column>
+				<header>
+					<Label text="Employee Name" tooltip="name of employee"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Region" tooltip="name of region"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Job Type"/>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="Phone Number"/>
+				</header>
+			</Column>
+		</columns>
+	</Table>
+</core:FragmentDefinition>
